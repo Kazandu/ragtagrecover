@@ -26,7 +26,7 @@ else:
 dbuser = config['MAIN']['dbuser']
 dbpw= config['MAIN']['dbpw']
 
-DATABASE_URL = "mysql+mysqlconnector://"+dbuser+":"+dbpw+"@localhost:3306/ragtagrecover"
+DATABASE_URL = "mysql+mysqlconnector://"+dbuser+":"+dbpw+"@localhost:3306/ragtagrecovery"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
