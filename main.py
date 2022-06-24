@@ -65,4 +65,4 @@ async def todolist(request: Request, db: Session = Depends(get_database_session)
     records = db.query(ToDo).all()
     return {'result:':records}
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=5069)
+    uvicorn.run(app, host='127.0.0.1', port=5169)
