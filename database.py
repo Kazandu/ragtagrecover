@@ -16,8 +16,8 @@ def logwriterfunc(msg):
     logWriter.close()
 
 
-if (os.path.isfile(pwd+"/config.ini")):
-    config.read(pwd+'/config.ini')
+if (os.path.isfile(pwd+"/dbconfig.ini")):
+    config.read(pwd+'/dbconfig.ini')
 else:
     print("ERROR: NO DB-CONFIG FILE! Exiting...")
     logwriterfunc("[ERROR] - Started without DB config File, please rename TEMPLATEdbconfig.ini to dbconfig.ini and fill the parameters.\n")
